@@ -1,0 +1,299 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoCore"
+      },
+      {
+        "kind": "Import",
+        "name": "TruvideoSdk",
+        "printedName": "TruvideoSdk",
+        "declKind": "Import",
+        "moduleName": "TruvideoCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "TruvideoCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TruvideoCore",
+        "printedName": "TruvideoCore",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoCore",
+                "printedName": "TruvideoCore.TruvideoCore",
+                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(cpy)shared",
+            "mangledName": "$s12TruvideoCoreAAC6sharedABvpZ",
+            "moduleName": "TruvideoCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruvideoCore",
+                    "printedName": "TruvideoCore.TruvideoCore",
+                    "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(cm)shared",
+                "mangledName": "$s12TruvideoCoreAAC6sharedABvgZ",
+                "moduleName": "TruvideoCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate(apiKey:secretKey:externalId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)authenticateWithApiKey:secretKey:externalId:completionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC12authenticate6apiKey06secretE010externalIdySS_S2StYaKF",
+            "moduleName": "TruvideoCore",
+            "objc_name": "authenticateWithApiKey:secretKey:externalId:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initAuthentication",
+            "printedName": "initAuthentication()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)initAuthenticationWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC18initAuthenticationyyYaKF",
+            "moduleName": "TruvideoCore",
+            "objc_name": "initAuthenticationWithCompletionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAuthenticated",
+            "printedName": "isAuthenticated()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)isAuthenticatedWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC15isAuthenticatedSbyYaKF",
+            "moduleName": "TruvideoCore",
+            "objc_name": "isAuthenticatedWithCompletionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAuthenticationExpired",
+            "printedName": "isAuthenticationExpired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)isAuthenticationExpiredWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC23isAuthenticationExpiredSbyYaKF",
+            "moduleName": "TruvideoCore",
+            "objc_name": "isAuthenticationExpiredWithCompletionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruvideoCore",
+                "printedName": "TruvideoCore.TruvideoCore",
+                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)init",
+            "mangledName": "$s12TruvideoCoreAACABycfc",
+            "moduleName": "TruvideoCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore",
+        "mangledName": "$s12TruvideoCoreAAC",
+        "moduleName": "TruvideoCore",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

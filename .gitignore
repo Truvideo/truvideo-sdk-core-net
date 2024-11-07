@@ -1,0 +1,6 @@
+.DS_Store
+TruvideoCore/ApiDefinitions.cs
+TruvideoCore/derivedData
+TruvideoCore/archives
+TruVideoCoreiOSBinding/bin
+TruVideoCoreiOSBinding/obj
