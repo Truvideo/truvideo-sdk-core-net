@@ -3,10 +3,10 @@ import TruvideoSdk
 import CommonCrypto
 
 @objc
-final public class TruvideoCore: NSObject {
+final public class TruvideoCoreSdk: NSObject {
     
     @objc
-    public static let shared = TruvideoCore()
+    public static let shared = TruvideoCoreSdk()
     
     @objc
     public func authenticate(

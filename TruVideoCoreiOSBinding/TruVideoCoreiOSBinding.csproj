@@ -1,24 +1,63 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-  <Version>0.0.1</Version>
-    <TargetFramework>net8.0-ios</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>true</ImplicitUsings>
-    <IsBindingProject>true</IsBindingProject>
-    <RepositoryUrl>https://github.com/Truvideo/truvideo-sdk-core-net</RepositoryUrl>
+       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.3</Version>
+    <Authors>Truvideo</Authors>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{8C221693-F095-41AC-9E84-ADF99E09F5AC}</ProjectGuid>
+    <TemplateGuid>{b6f3ff35-79b2-4f25-a2fc-60a7cf61013b}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NativeLibrary</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TruVideoCoreiOSBinding</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+        <RepositoryUrl>https://github.com/Truvideo/truvideo-sdk-core-net</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.7.0" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="Structs.cs" />
+  </ItemGroup>
+    <ItemGroup>
     <NativeReference Include="xcframeworks/TruvideoCore.xcframework">
-      <Frameworks>Foundation</Frameworks>
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
     <NativeReference Include="xcframeworks/TruvideoSdk.xcframework">
-      <Frameworks>Foundation</Frameworks>
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
@@ -43,4 +82,5 @@
       <SmartLink>False</SmartLink>
     </NativeReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>

@@ -1,19 +1,25 @@
-
-using System;
+﻿using System;
 using Foundation;
 using ObjCRuntime;
 
-namespace TruvideoCoreiOS {
+[assembly: ObjCRuntime.LinkWith(
+    "TruvideoCore.xcframework",
+    LinkTarget = LinkTarget.Arm64 | LinkTarget.Simulator64,
+    Frameworks = "Foundation",
+    SmartLink = true,
+    ForceLoad = true
+)]
 
-// @interface TruvideoCore : NSObject
-[BaseType (typeof(NSObject), Name = "_TtC12TruvideoCore12TruvideoCore")]
-[DisableDefaultCtor]
-interface TruvideoCore
-{
-	// @property (readonly, nonatomic, strong, class) TruvideoCore * _Nonnull shared;
-	[Static]
-	[Export ("shared", ArgumentSemantic.Strong)]
-	TruvideoCore Shared { get; }
+namespace TruvideoCoreiOS {
+    // @interface TruvideoCoreSdk : NSObject
+    [BaseType(typeof(NSObject), Name = "_TtC12TruvideoCore15TruvideoCoreSdk")]
+    [DisableDefaultCtor]
+    interface TruvideoCoreSdk
+    {
+        // @property (readonly, nonatomic, strong, class) TruvideoCoreSdk * _Nonnull shared;
+        [Static]
+        [Export("shared", ArgumentSemantic.Strong)]
+        TruvideoCoreSdk Shared { get; }
 
 	// -(void)authenticateWithApiKey:(NSString * _Nonnull)apiKey secretKey:(NSString * _Nonnull)secretKey externalId:(NSString * _Nonnull)externalId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 	[Export ("authenticateWithApiKey:secretKey:externalId:completionHandler:")]

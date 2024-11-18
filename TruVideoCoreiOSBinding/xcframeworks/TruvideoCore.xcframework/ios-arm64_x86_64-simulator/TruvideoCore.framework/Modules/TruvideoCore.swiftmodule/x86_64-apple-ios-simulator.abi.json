@@ -27,8 +27,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "TruvideoCore",
-        "printedName": "TruvideoCore",
+        "name": "TruvideoCoreSdk",
+        "printedName": "TruvideoCoreSdk",
         "children": [
           {
             "kind": "Var",
@@ -37,14 +37,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TruvideoCore",
-                "printedName": "TruvideoCore.TruvideoCore",
-                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore"
+                "name": "TruvideoCoreSdk",
+                "printedName": "TruvideoCore.TruvideoCoreSdk",
+                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(cpy)shared",
-            "mangledName": "$s12TruvideoCoreAAC6sharedABvpZ",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk(cpy)shared",
+            "mangledName": "$s12TruvideoCore0aB3SdkC6sharedACvpZ",
             "moduleName": "TruvideoCore",
             "static": true,
             "declAttributes": [
@@ -64,14 +64,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "TruvideoCore",
-                    "printedName": "TruvideoCore.TruvideoCore",
-                    "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore"
+                    "name": "TruvideoCoreSdk",
+                    "printedName": "TruvideoCore.TruvideoCoreSdk",
+                    "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(cm)shared",
-                "mangledName": "$s12TruvideoCoreAAC6sharedABvgZ",
+                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk(cm)shared",
+                "mangledName": "$s12TruvideoCore0aB3SdkC6sharedACvgZ",
                 "moduleName": "TruvideoCore",
                 "static": true,
                 "implicit": true,
@@ -113,8 +113,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)authenticateWithApiKey:secretKey:externalId:completionHandler:",
-            "mangledName": "$s12TruvideoCoreAAC12authenticate6apiKey06secretE010externalIdySS_S2StYaKF",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk(im)authenticateWithApiKey:secretKey:externalId:completionHandler:",
+            "mangledName": "$s12TruvideoCore0aB3SdkC12authenticate6apiKey06secretF010externalIdySS_S2StYaKF",
             "moduleName": "TruvideoCore",
             "objc_name": "authenticateWithApiKey:secretKey:externalId:completionHandler:",
             "declAttributes": [
@@ -137,8 +137,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)initAuthenticationWithCompletionHandler:",
-            "mangledName": "$s12TruvideoCoreAAC18initAuthenticationyyYaKF",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk(im)initAuthenticationWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCore0aB3SdkC18initAuthenticationyyYaKF",
             "moduleName": "TruvideoCore",
             "objc_name": "initAuthenticationWithCompletionHandler:",
             "declAttributes": [
@@ -162,8 +162,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)isAuthenticatedWithCompletionHandler:",
-            "mangledName": "$s12TruvideoCoreAAC15isAuthenticatedSbyYaKF",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk(im)isAuthenticatedWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCore0aB3SdkC15isAuthenticatedSbyYaKF",
             "moduleName": "TruvideoCore",
             "objc_name": "isAuthenticatedWithCompletionHandler:",
             "declAttributes": [
@@ -187,8 +187,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)isAuthenticationExpiredWithCompletionHandler:",
-            "mangledName": "$s12TruvideoCoreAAC23isAuthenticationExpiredSbyYaKF",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk(im)isAuthenticationExpiredWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCore0aB3SdkC23isAuthenticationExpiredSbyYaKF",
             "moduleName": "TruvideoCore",
             "objc_name": "isAuthenticationExpiredWithCompletionHandler:",
             "declAttributes": [
@@ -206,14 +206,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TruvideoCore",
-                "printedName": "TruvideoCore.TruvideoCore",
-                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore"
+                "name": "TruvideoCoreSdk",
+                "printedName": "TruvideoCore.TruvideoCoreSdk",
+                "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)init",
-            "mangledName": "$s12TruvideoCoreAACABycfc",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk(im)init",
+            "mangledName": "$s12TruvideoCore0aB3SdkCACycfc",
             "moduleName": "TruvideoCore",
             "overriding": true,
             "implicit": true,
@@ -227,8 +227,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore",
-        "mangledName": "$s12TruvideoCoreAAC",
+        "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCoreSdk",
+        "mangledName": "$s12TruvideoCore0aB3SdkC",
         "moduleName": "TruvideoCore",
         "declAttributes": [
           "AccessControl",

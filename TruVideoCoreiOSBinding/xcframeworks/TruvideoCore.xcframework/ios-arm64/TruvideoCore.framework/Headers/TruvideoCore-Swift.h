@@ -300,10 +300,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSString;
 
-SWIFT_CLASS("_TtC12TruvideoCore12TruvideoCore")
-@interface TruvideoCore : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TruvideoCore * _Nonnull shared;)
-+ (TruvideoCore * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC12TruvideoCore15TruvideoCoreSdk")
+@interface TruvideoCoreSdk : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TruvideoCoreSdk * _Nonnull shared;)
++ (TruvideoCoreSdk * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)authenticateWithApiKey:(NSString * _Nonnull)apiKey secretKey:(NSString * _Nonnull)secretKey externalId:(NSString * _Nonnull)externalId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 - (void)initAuthenticationWithCompletionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler SWIFT_METHOD_FAMILY(none);
 - (void)isAuthenticatedWithCompletionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;

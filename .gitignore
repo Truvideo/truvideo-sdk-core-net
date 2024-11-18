@@ -1,4 +1,5 @@
 .DS_Store
+.vs/*
 TruvideoCore/ApiDefinitions.cs
 TruvideoCore/derivedData
 TruvideoCore/archives

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TruVideoCoreiOSBinding</id>
+    <version>0.0.4</version>
+    <authors>Truvideo</authors>
+    <description>Package Description</description>
+    <repository url="https://github.com/Truvideo/truvideo-sdk-core-net" />
+    <dependencies>
+      <group targetFramework="Xamarin.iOS1.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System.Drawing.Common.dll" targetFramework="Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="Xamarin.iOS" targetFramework="Xamarin.iOS1.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="TruVideoCoreiOSBinding.targets" target="build/TruVideoCoreiOSBinding.targets" />
+    <file src="bin/Release/TruVideoCoreiOSBinding.dll" target="lib/xamarinios10" />
+    <file src="xcframeworks/AWSCognitoIdentityProvider.xcframework/**" target="build/native/AWSCognitoIdentityProvider.xcframework/" />
+    <file src="xcframeworks/AWSCognitoIdentityProviderASF.xcframework/**" target="build/native/AWSCognitoIdentityProviderASF.xcframework/" />
+    <file src="xcframeworks/AWSCore.xcframework/**" target="build/native/AWSCore.xcframework/" />
+    <file src="xcframeworks/AWSS3.xcframework/**" target="build/native/AWSS3.xcframework/" />
+    <file src="xcframeworks/shared.xcframework/**" target="build/native/shared.xcframework/" />
+    <file src="xcframeworks/TruvideoCore.xcframework/**" target="build/native/TruvideoCore.xcframework/" />
+    <file src="xcframeworks/TruvideoSdk.xcframework/**" target="build/native/TruvideoSdk.xcframework/" />
+  </files>
+</package>

@@ -9,8 +9,8 @@ import TruvideoSdk
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc final public class TruvideoCore : ObjectiveC.NSObject {
-  @objc public static let shared: TruvideoCore.TruvideoCore
+@_inheritsConvenienceInitializers @objc final public class TruvideoCoreSdk : ObjectiveC.NSObject {
+  @objc public static let shared: TruvideoCore.TruvideoCoreSdk
   #if compiler(>=5.3) && $AsyncAwait
   @objc final public func authenticate(apiKey: Swift.String, secretKey: Swift.String, externalId: Swift.String) async throws
   #endif

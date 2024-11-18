@@ -1,0 +1,32 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/TruvideoCore.xcframework">
+            <IsCxx>false</IsCxx>
+            <Kind>Framework</Kind>
+        </NativeReference>
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/TruvideoSdk.xcframework">
+            <IsCxx>false</IsCxx>
+            <Kind>Framework</Kind>
+        </NativeReference>
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/shared.xcframework">
+            <IsCxx>false</IsCxx>
+            <Kind>Framework</Kind>
+        </NativeReference>
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/AWSCognitoIdentityProviderASF.xcframework">
+            <IsCxx>false</IsCxx>
+            <Kind>Framework</Kind>
+        </NativeReference>
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/AWSCognitoIdentityProvider.xcframework">
+            <IsCxx>false</IsCxx>
+            <Kind>Framework</Kind>
+        </NativeReference>
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/AWSCore.xcframework">
+            <IsCxx>false</IsCxx>
+            <Kind>Framework</Kind>
+        </NativeReference>
+        <NativeReference Include="$(MSBuildThisFileDirectory)native/AWSS3.xcframework">
+            <IsCxx>false</IsCxx>
+            <Kind>Framework</Kind>
+        </NativeReference>
+    </ItemGroup>
+</Project>
