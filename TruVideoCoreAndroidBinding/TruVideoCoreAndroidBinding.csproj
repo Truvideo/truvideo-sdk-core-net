@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>24</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+      <Folder Include="Libs\" />
+  </ItemGroup>
+  <!-- <ItemGroup>
+    <Compile Include="TruvideoSdkInitializer.cs" />
+  </ItemGroup> -->
+  <ItemGroup>
+    <LibraryProjectZip Include="Libs\truvideo-sdk-android-core-76.2.5-rc.129.aar" />
+    <LibraryProjectZip Include="Libs\truvideo-sdk-android-common-0.0.76.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>2.0.21.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.KotlinX.Coroutines.Android">
+      <Version>1.9.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.KotlinX.Serialization.Core">
+      <Version>1.7.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common">
+      <Version>2.8.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Common">
+      <Version>2.0.21.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Activity">
+      <Version>1.9.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Startup.StartupRuntime">
+      <Version>1.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Io.Ktor.KtorClientCore" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorClientJson" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorHttp" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorSerializationKotlinxJson" Version="2.3.11" />
+    <PackageReference Include="Org.Jetbrains.Kotlinx.KotlinxSerializationJson" Version="1.6.3.1" />
+  </ItemGroup>
+</Project>

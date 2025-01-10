@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>24</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationId>com.companyname.TruVideoAndroidTestApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TruVideoCoreAndroidBinding\TruVideoCoreAndroidBinding.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Io.Ktor.KtorClientContentNegotiation" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorClientCore" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorClientJson" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorClientOkhttp" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorEvents" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorHttp" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorSerializationKotlinx" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorSerializationKotlinxJson" Version="2.3.11" />
+    <PackageReference Include="Io.Ktor.KtorUtils" Version="2.3.11" />
+    <PackageReference Include="Org.Jetbrains.Kotlinx.KotlinxSerializationJson" Version="1.6.3.1" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.7.0.4" />
+    <PackageReference Include="Xamarin.AndroidX.MultiDex" Version="2.0.1.30" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.12.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>2.0.21.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Common">
+      <Version>2.0.21.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Startup.StartupRuntime">
+      <Version>1.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common">
+      <Version>2.8.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime">
+      <Version>2.8.7.1</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>

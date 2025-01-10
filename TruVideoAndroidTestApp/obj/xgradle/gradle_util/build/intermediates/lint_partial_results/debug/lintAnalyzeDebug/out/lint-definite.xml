@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.4.1" type="incidents">
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 35"
+            oldString="34"
+            replacement="35"
+            priority="0"/>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="12"
+            column="9"
+            startOffset="229"
+            endLine="12"
+            endColumn="23"
+            endOffset="243"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for org-jetbrains-kotlinx-kotlinx-serialization-json-jvm23"
+            robot="true">
+            <fix-replace
+                description="Replace with orgJetbrainsKotlinxKotlinxSerializationJsonJvm21 = &quot;1.6.3&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="orgJetbrainsKotlinxKotlinxSerializationJsonJvm21 = &quot;1.6.3&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="246"
+                    endOffset="246"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with org-jetbrains-kotlinx-kotlinx-serialization-json-jvm23 = { module = &quot;org.jetbrains.kotlinx:kotlinx-serialization-json-jvm&quot;, version.ref = &quot;orgJetbrainsKotlinxKotlinxSerializationJsonJvm21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="org-jetbrains-kotlinx-kotlinx-serialization-json-jvm23 = { module = &quot;org.jetbrains.kotlinx:kotlinx-serialization-json-jvm&quot;, version.ref = &quot;orgJetbrainsKotlinxKotlinxSerializationJsonJvm21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="1753"
+                    endOffset="1753"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.org.jetbrains.kotlinx.kotlinx.serialization.json.jvm23"
+                robot="true"
+                replacement="libs.org.jetbrains.kotlinx.kotlinx.serialization.json.jvm23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="522"
+                    endOffset="582"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="26"
+            column="17"
+            startOffset="523"
+            endLine="26"
+            endColumn="75"
+            endOffset="581"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for org-jetbrains-kotlinx-kotlinx-serialization-json23"
+            robot="true">
+            <fix-replace
+                description="Replace with orgJetbrainsKotlinxKotlinxSerializationJson21 = &quot;1.6.3&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="orgJetbrainsKotlinxKotlinxSerializationJson21 = &quot;1.6.3&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="246"
+                    endOffset="246"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with org-jetbrains-kotlinx-kotlinx-serialization-json23 = { module = &quot;org.jetbrains.kotlinx:kotlinx-serialization-json&quot;, version.ref = &quot;orgJetbrainsKotlinxKotlinxSerializationJson21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="org-jetbrains-kotlinx-kotlinx-serialization-json23 = { module = &quot;org.jetbrains.kotlinx:kotlinx-serialization-json&quot;, version.ref = &quot;orgJetbrainsKotlinxKotlinxSerializationJson21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="1753"
+                    endOffset="1753"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.org.jetbrains.kotlinx.kotlinx.serialization.json23"
+                robot="true"
+                replacement="libs.org.jetbrains.kotlinx.kotlinx.serialization.json23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="599"
+                    endOffset="655"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="27"
+            column="17"
+            startOffset="600"
+            endLine="27"
+            endColumn="71"
+            endOffset="654"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-io23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorIo21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorIo21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-io23 = { module = &quot;io.ktor:ktor-io&quot;, version.ref = &quot;ioKtorKtorIo21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-io23 = { module = &quot;io.ktor:ktor-io&quot;, version.ref = &quot;ioKtorKtorIo21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.io23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.io23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="672"
+                    endOffset="696"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="28"
+            column="17"
+            startOffset="673"
+            endLine="28"
+            endColumn="39"
+            endOffset="695"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-utils23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorUtils21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorUtils21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-utils23 = { module = &quot;io.ktor:ktor-utils&quot;, version.ref = &quot;ioKtorKtorUtils21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-utils23 = { module = &quot;io.ktor:ktor-utils&quot;, version.ref = &quot;ioKtorKtorUtils21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.utils23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.utils23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="713"
+                    endOffset="740"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="29"
+            column="17"
+            startOffset="714"
+            endLine="29"
+            endColumn="42"
+            endOffset="739"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-http23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorHttp21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorHttp21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-http23 = { module = &quot;io.ktor:ktor-http&quot;, version.ref = &quot;ioKtorKtorHttp21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-http23 = { module = &quot;io.ktor:ktor-http&quot;, version.ref = &quot;ioKtorKtorHttp21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.http23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.http23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="757"
+                    endOffset="783"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="30"
+            column="17"
+            startOffset="758"
+            endLine="30"
+            endColumn="41"
+            endOffset="782"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-websockets23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorWebsockets21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorWebsockets21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-websockets23 = { module = &quot;io.ktor:ktor-websockets&quot;, version.ref = &quot;ioKtorKtorWebsockets21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-websockets23 = { module = &quot;io.ktor:ktor-websockets&quot;, version.ref = &quot;ioKtorKtorWebsockets21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.websockets23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.websockets23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="800"
+                    endOffset="832"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="31"
+            column="17"
+            startOffset="801"
+            endLine="31"
+            endColumn="47"
+            endOffset="831"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-serialization23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorSerialization21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorSerialization21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-serialization23 = { module = &quot;io.ktor:ktor-serialization&quot;, version.ref = &quot;ioKtorKtorSerialization21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-serialization23 = { module = &quot;io.ktor:ktor-serialization&quot;, version.ref = &quot;ioKtorKtorSerialization21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.serialization23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.serialization23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="849"
+                    endOffset="884"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="32"
+            column="17"
+            startOffset="850"
+            endLine="32"
+            endColumn="50"
+            endOffset="883"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-websocket-serialization23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorWebsocketSerialization21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorWebsocketSerialization21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-websocket-serialization23 = { module = &quot;io.ktor:ktor-websocket-serialization&quot;, version.ref = &quot;ioKtorKtorWebsocketSerialization21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-websocket-serialization23 = { module = &quot;io.ktor:ktor-websocket-serialization&quot;, version.ref = &quot;ioKtorKtorWebsocketSerialization21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.websocket.serialization23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.websocket.serialization23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="901"
+                    endOffset="946"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="33"
+            column="17"
+            startOffset="902"
+            endLine="33"
+            endColumn="60"
+            endOffset="945"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-serialization-kotlinx17"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorSerializationKotlinx15 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorSerializationKotlinx15 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-serialization-kotlinx17 = { module = &quot;io.ktor:ktor-serialization-kotlinx&quot;, version.ref = &quot;ioKtorKtorSerializationKotlinx15&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-serialization-kotlinx17 = { module = &quot;io.ktor:ktor-serialization-kotlinx&quot;, version.ref = &quot;ioKtorKtorSerializationKotlinx15&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.serialization.kotlinx17"
+                robot="true"
+                replacement="libs.io.ktor.ktor.serialization.kotlinx17"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="963"
+                    endOffset="1006"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="34"
+            column="17"
+            startOffset="964"
+            endLine="34"
+            endColumn="58"
+            endOffset="1005"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-serialization-kotlinx-json17"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorSerializationKotlinxJson15 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorSerializationKotlinxJson15 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-serialization-kotlinx-json17 = { module = &quot;io.ktor:ktor-serialization-kotlinx-json&quot;, version.ref = &quot;ioKtorKtorSerializationKotlinxJson15&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-serialization-kotlinx-json17 = { module = &quot;io.ktor:ktor-serialization-kotlinx-json&quot;, version.ref = &quot;ioKtorKtorSerializationKotlinxJson15&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.serialization.kotlinx.json17"
+                robot="true"
+                replacement="libs.io.ktor.ktor.serialization.kotlinx.json17"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="1023"
+                    endOffset="1071"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="35"
+            column="17"
+            startOffset="1024"
+            endLine="35"
+            endColumn="63"
+            endOffset="1070"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-events23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorEvents21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorEvents21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-events23 = { module = &quot;io.ktor:ktor-events&quot;, version.ref = &quot;ioKtorKtorEvents21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-events23 = { module = &quot;io.ktor:ktor-events&quot;, version.ref = &quot;ioKtorKtorEvents21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.events23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.events23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="1088"
+                    endOffset="1116"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="36"
+            column="17"
+            startOffset="1089"
+            endLine="36"
+            endColumn="43"
+            endOffset="1115"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-client-core23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorClientCore21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorClientCore21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-client-core23 = { module = &quot;io.ktor:ktor-client-core&quot;, version.ref = &quot;ioKtorKtorClientCore21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-client-core23 = { module = &quot;io.ktor:ktor-client-core&quot;, version.ref = &quot;ioKtorKtorClientCore21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.client.core23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.client.core23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="1133"
+                    endOffset="1166"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="37"
+            column="17"
+            startOffset="1134"
+            endLine="37"
+            endColumn="48"
+            endOffset="1165"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-client-json23"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorClientJson21 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorClientJson21 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-client-json23 = { module = &quot;io.ktor:ktor-client-json&quot;, version.ref = &quot;ioKtorKtorClientJson21&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-client-json23 = { module = &quot;io.ktor:ktor-client-json&quot;, version.ref = &quot;ioKtorKtorClientJson21&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.client.json23"
+                robot="true"
+                replacement="libs.io.ktor.ktor.client.json23"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="1183"
+                    endOffset="1216"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="38"
+            column="17"
+            startOffset="1184"
+            endLine="38"
+            endColumn="48"
+            endOffset="1215"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-client-okhttp11"
+            robot="true">
+            <fix-replace
+                description="Replace with ioKtorKtorClientOkhttp9 = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ioKtorKtorClientOkhttp9 = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="25"
+                    endOffset="25"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-client-okhttp11 = { module = &quot;io.ktor:ktor-client-okhttp&quot;, version.ref = &quot;ioKtorKtorClientOkhttp9&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-client-okhttp11 = { module = &quot;io.ktor:ktor-client-okhttp&quot;, version.ref = &quot;ioKtorKtorClientOkhttp9&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.client.okhttp11"
+                robot="true"
+                replacement="libs.io.ktor.ktor.client.okhttp11"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="1233"
+                    endOffset="1268"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="39"
+            column="17"
+            startOffset="1234"
+            endLine="39"
+            endColumn="50"
+            endOffset="1267"/>
+    </incident>
+
+    <incident
+        id="UseTomlInstead"
+        severity="warning"
+        message="Use version catalog instead">
+        <fix-composite
+            description="Replace with new library catalog declaration for io-ktor-ktor-client-content-negotiation"
+            robot="true">
+            <fix-replace
+                description="Replace with ktorKtorClientContentNegotiation = &quot;2.3.11&quot;..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="ktorKtorClientContentNegotiation = &quot;2.3.11&quot;&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="124"
+                    endOffset="124"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with io-ktor-ktor-client-content-negotiation = { module = &quot;io.ktor:ktor-client-content-negotiation&quot;, version.ref = &quot;ktorKtorClientContentNegotiation&quot; }..."
+                robot="true"
+                oldString="_lint_insert_begin_"
+                replacement="io-ktor-ktor-client-content-negotiation = { module = &quot;io.ktor:ktor-client-content-negotiation&quot;, version.ref = &quot;ktorKtorClientContentNegotiation&quot; }&#xA;"
+                priority="0">
+                <range
+                    file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+                    startOffset="351"
+                    endOffset="351"/>
+            </fix-replace>
+            <fix-replace
+                description="Replace with libs.io.ktor.ktor.client.content.negotiation"
+                robot="true"
+                replacement="libs.io.ktor.ktor.client.content.negotiation"
+                priority="0">
+                <range
+                    file="${:gradle_util*projectDir}/build.gradle.kts"
+                    startOffset="1285"
+                    endOffset="1333"/>
+            </fix-replace>
+        </fix-composite>
+        <location
+            file="${:gradle_util*projectDir}/build.gradle.kts"
+            line="40"
+            column="17"
+            startOffset="1286"
+            endLine="40"
+            endColumn="63"
+            endOffset="1332"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.10.1 is available: 1.15.0">
+        <fix-replace
+            description="Change to 1.15.0"
+            family="Update versions"
+            oldString="1.10.1"
+            replacement="1.15.0"
+            priority="0"/>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="4"
+            column="11"
+            startOffset="52"
+            endLine="4"
+            endColumn="19"
+            endOffset="60"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.2.1"
+            priority="0"/>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="6"
+            column="16"
+            startOffset="93"
+            endLine="6"
+            endColumn="23"
+            endOffset="100"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1">
+        <fix-replace
+            description="Change to 3.6.1"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.6.1"
+            priority="0"/>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="7"
+            column="16"
+            startOffset="116"
+            endLine="7"
+            endColumn="23"
+            endOffset="123"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.6.1 is available: 2.8.7">
+        <fix-replace
+            description="Change to 2.8.7"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.8.7"
+            priority="0"/>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="8"
+            column="23"
+            startOffset="146"
+            endLine="8"
+            endColumn="30"
+            endOffset="153"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.7.0 is available: 1.9.3">
+        <fix-replace
+            description="Change to 1.9.3"
+            family="Update versions"
+            oldString="1.7.0"
+            replacement="1.9.3"
+            priority="0"/>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="9"
+            column="19"
+            startOffset="172"
+            endLine="9"
+            endColumn="26"
+            endOffset="179"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2023.08.00 is available: 2024.12.01">
+        <fix-replace
+            description="Change to 2024.12.01"
+            family="Update versions"
+            oldString="2023.08.00"
+            replacement="2024.12.01"
+            priority="0"/>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="10"
+            column="14"
+            startOffset="193"
+            endLine="10"
+            endColumn="26"
+            endOffset="205"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0">
+        <fix-replace
+            description="Change to 1.7.0"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.0"
+            priority="0"/>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="11"
+            column="13"
+            startOffset="218"
+            endLine="11"
+            endColumn="20"
+            endOffset="225"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.10.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.10.0"
+            replacement="1.12.0"
+            priority="0"/>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="12"
+            column="12"
+            startOffset="237"
+            endLine="12"
+            endColumn="20"
+            endOffset="245"/>
+    </incident>
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of com.android.application than 8.4.1 is available: 8.7.3. (There is also a newer version of 8.4.𝑥 available, if upgrading to 8.7.3 is difficult: 8.4.2)">
+        <fix-alternatives>
+            <fix-replace
+                description="Change to 8.7.3"
+                family="Update versions"
+                oldString="8.4.1"
+                replacement="8.7.3"
+                priority="0"/>
+            <fix-replace
+                description="Change to 8.4.2"
+                family="Update versions"
+                robot="true"
+                independent="true"
+                oldString="8.4.1"
+                replacement="8.4.2"
+                priority="0"/>
+        </fix-alternatives>
+        <location
+            file="$HOME/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle/libs.versions.toml"
+            line="2"
+            column="7"
+            startOffset="17"
+            endLine="2"
+            endColumn="14"
+            endOffset="24"/>
+    </incident>
+
+</incidents>
