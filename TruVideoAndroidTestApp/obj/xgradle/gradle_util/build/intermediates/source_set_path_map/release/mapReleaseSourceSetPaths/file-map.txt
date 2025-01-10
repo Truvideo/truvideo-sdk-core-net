@@ -1,7 +1,0 @@
-tech.tuyen_vuduc.gradle_util-pngs-0 /Users/douglas_poveda/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle_util/build/generated/res/pngs/release
-tech.tuyen_vuduc.gradle_util-resValues-1 /Users/douglas_poveda/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle_util/build/generated/res/resValues/release
-tech.tuyen_vuduc.gradle_util-packageReleaseResources-2 /Users/douglas_poveda/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle_util/build/intermediates/incremental/release/packageReleaseResources/merged.dir
-tech.tuyen_vuduc.gradle_util-packageReleaseResources-3 /Users/douglas_poveda/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle_util/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
-tech.tuyen_vuduc.gradle_util-release-4 /Users/douglas_poveda/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle_util/build/intermediates/merged_res/release/mergeReleaseResources
-tech.tuyen_vuduc.gradle_util-main-5 /Users/douglas_poveda/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle_util/src/main/res
-tech.tuyen_vuduc.gradle_util-release-6 /Users/douglas_poveda/TruVideo/net/truvideo/truvideo-sdk-core-net/TruVideoAndroidTestApp/obj/xgradle/gradle_util/src/release/res
