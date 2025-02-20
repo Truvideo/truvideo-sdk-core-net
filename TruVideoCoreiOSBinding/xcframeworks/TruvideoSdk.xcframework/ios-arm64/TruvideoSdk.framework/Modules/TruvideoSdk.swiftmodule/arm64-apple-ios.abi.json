@@ -1269,8 +1269,8 @@
       "filePath": "\/Users\/vagrant\/git\/CI.swift",
       "kind": "StringLiteral",
       "offset": 2124,
-      "length": 4,
-      "value": "\"RC\""
+      "length": 6,
+      "value": "\"PROD\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/TruvideoSdk\/S3\/Client\/AWSS3Client.swift",

@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Truvideo/truvideo-sdk-ios-core",
       "state" : {
-        "branch" : "76.2.1-RC.165",
-        "revision" : "103052218d951b5eba083ddba6800e264236b6f1"
+        "revision" : "1b311d46e8b91def5c7ee250c1c4deab9e958603",
+        "version" : "76.2.1"
       }
     }
   ],
