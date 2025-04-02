@@ -5,30 +5,33 @@ using ObjCRuntime;
 
 namespace TruvideoCoreiOS {
 
-// @interface TruvideoCore : NSObject
+
 [BaseType (typeof(NSObject), Name = "_TtC12TruvideoCore12TruvideoCore")]
 [DisableDefaultCtor]
+
 interface TruvideoCore
 {
 	// @property (readonly, nonatomic, strong, class) TruvideoCore * _Nonnull shared;
 	[Static]
 	[Export ("shared", ArgumentSemantic.Strong)]
 	TruvideoCore Shared { get; }
-
-	// -(void)authenticateWithApiKey:(NSString * _Nonnull)apiKey secretKey:(NSString * _Nonnull)secretKey externalId:(NSString * _Nonnull)externalId completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
-	[Export ("authenticateWithApiKey:secretKey:externalId:completionHandler:")]
-	void AuthenticateWithApiKey (string apiKey, string secretKey, string externalId, Action<NSError> completionHandler);
-
-	// -(void)initAuthenticationWithCompletionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler __attribute__((objc_method_family("none")));
+	
+	[Export ("authenticateWithApiKey:payload:externalId:signature:completionHandler:")]
+	void AuthenticateWithApiKey (string apiKey, string payload, string externalId,string signature, Action<string, NSError> completionHandler);
+	
 	[Export ("initAuthenticationWithCompletionHandler:")]
-	void InitAuthenticationWithCompletionHandler (Action<NSError> completionHandler);
-
-	// -(void)isAuthenticatedWithCompletionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
+	void InitAuthenticationWithCompletionHandler (Action<string, NSError> completionHandler);
+	
 	[Export ("isAuthenticatedWithCompletionHandler:")]
-	void IsAuthenticatedWithCompletionHandler (Action<bool, NSError> completionHandler);
-
-	// -(void)isAuthenticationExpiredWithCompletionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
+	void IsAuthenticatedWithCompletionHandler (Action<string, NSError> completionHandler);
+	
 	[Export ("isAuthenticationExpiredWithCompletionHandler:")]
-	void IsAuthenticationExpiredWithCompletionHandler (Action<bool, NSError> completionHandler);
+	void IsAuthenticationExpiredWithCompletionHandler (Action<string, NSError> completionHandler);
+	
+	[Export ("generatePayloadWithCompletionHandler:")]
+	void GeneratePayload (Action<string, NSError> completionHandler);
+	
+	[Export ("toSha256StringWithPayload:secretKey:completionHandler:")]
+	void ToSha256String (string payload,string secretKey,Action<string, NSError> completionHandler);
 }
 }

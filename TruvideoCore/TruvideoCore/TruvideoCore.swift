@@ -8,64 +8,104 @@ final public class TruvideoCore: NSObject {
     @objc
     public static let shared = TruvideoCore()
     
+    // MARK: - Authentication
+    
     @objc
     public func authenticate(
         apiKey: String,
-        secretKey: String,
-        externalId: String
-    ) async throws {
-        let payload = try await generatePayload()
-        let signature = toSha256String(payload: payload, secretKey: secretKey)
-        try await TruvideoSdk.authenticate(
-            apiKey: apiKey,
-            payload: payload,
-            signature: signature,
-            externalId: externalId
-        )
-    }
-    
-    func generatePayload() async throws -> String {
-        try TruvideoSdk.generatePayload()
+        payload: String,
+        externalId: String,
+        signature: String,
+        completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void
+    ) {
+        Task {
+            do {
+               try await TruvideoSdk.authenticate(
+                    apiKey: apiKey,
+                    payload: payload,
+                    signature: signature,
+                    externalId: externalId
+                )
+                completionHandler("Authenticated", nil) // Success
+            } catch {
+                completionHandler(nil, error) // Failure
+            }
+        }
     }
     
     @objc
-    public func initAuthentication() async throws {
-        try await TruvideoSdk.initAuthentication()
+    public func generatePayload(completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
+        Task {
+            do {
+                let result = try TruvideoSdk.generatePayload()
+                completionHandler(result, nil)
+            } catch {
+                completionHandler(nil, error)
+            }
+        }
     }
     
     @objc
-    public func isAuthenticated() async throws -> Bool  {
-        try TruvideoSdk.isAuthenticated()
+    public func initAuthentication(completionHandler: @escaping (_ success: String, _ error: Error?) -> Void) {
+        Task {
+            do {
+                try await TruvideoSdk.initAuthentication()
+                completionHandler("Authenticated Successfully", nil)
+            } catch {
+                completionHandler("false", error)
+            }
+        }
     }
 
     @objc
-    public func isAuthenticationExpired() async throws -> Bool  {
-        try TruvideoSdk.isAuthenticationExpired()
+    public func isAuthenticated(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void) {
+        Task {
+            do {
+                let result = try TruvideoSdk.isAuthenticated()
+                completionHandler("\(result)", nil)
+            } catch {
+                completionHandler("false", error)
+            }
+        }
     }
 
-    func toSha256String(payload: String, secretKey: String) -> String {
-        let hmac256 = CCHmacAlgorithm(kCCHmacAlgSHA256)
+    @objc
+    public func isAuthenticationExpired(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void) {
+        Task {
+            do {
+                let result = try TruvideoSdk.isAuthenticationExpired()
+                completionHandler("\(result)", nil)
+            } catch {
+                completionHandler("false", error)
+            }
+        }
+    }
+
+    // MARK: - HMAC SHA-256
+
+    @objc
+    public func toSha256String(payload: String, secretKey: String, completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
+        guard let keyData = secretKey.data(using: .utf8),
+              let payloadData = payload.data(using: .utf8) else {
+            completionHandler(nil, NSError(domain: "HMAC Error", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid key or payload encoding"]))
+            return
+        }
+
         var macData = Data(count: Int(CC_SHA256_DIGEST_LENGTH))
-
-        secretKey.withCString { keyCString in
-            payload.withCString { msgCString in
-                macData.withUnsafeMutableBytes { macDataBytes in
-                    guard let keyBytes = UnsafeRawPointer(keyCString)?.assumingMemoryBound(to: UInt8.self),
-                          let msgBytes = UnsafeRawPointer(msgCString)?.assumingMemoryBound(to: UInt8.self) else {
-                        return
-                    }
-
+        macData.withUnsafeMutableBytes { macBytes in
+            keyData.withUnsafeBytes { keyBytes in
+                payloadData.withUnsafeBytes { payloadBytes in
                     CCHmac(
-                        hmac256,
-                        keyBytes, Int(strlen(keyCString)),
-                        msgBytes, Int(strlen(msgCString)),
-                        macDataBytes.bindMemory(to: UInt8.self).baseAddress
+                        CCHmacAlgorithm(kCCHmacAlgSHA256),
+                        keyBytes.baseAddress, keyBytes.count,
+                        payloadBytes.baseAddress, payloadBytes.count,
+                        macBytes.baseAddress
                     )
                 }
             }
         }
 
-        return macData.map { String(format: "%02x", $0) }
-            .joined()
+        let hashString = macData.map { String(format: "%02x", $0) }.joined()
+        completionHandler(hashString, nil)
     }
 }

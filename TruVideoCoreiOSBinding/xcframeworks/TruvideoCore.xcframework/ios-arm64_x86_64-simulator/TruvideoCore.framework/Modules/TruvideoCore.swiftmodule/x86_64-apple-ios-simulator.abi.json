@@ -86,7 +86,7 @@
           {
             "kind": "Function",
             "name": "authenticate",
-            "printedName": "authenticate(apiKey:secretKey:externalId:)",
+            "printedName": "authenticate(apiKey:payload:externalId:signature:completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -110,35 +110,197 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)authenticateWithApiKey:secretKey:externalId:completionHandler:",
-            "mangledName": "$s12TruvideoCoreAAC12authenticate6apiKey06secretE010externalIdySS_S2StYaKF",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)authenticateWithApiKey:payload:externalId:signature:completionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC12authenticate6apiKey7payload10externalId9signature17completionHandlerySS_S3SySSSg_s5Error_pSgtctF",
             "moduleName": "TruvideoCore",
-            "objc_name": "authenticateWithApiKey:secretKey:externalId:completionHandler:",
+            "objc_name": "authenticateWithApiKey:payload:externalId:signature:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "generatePayload",
+            "printedName": "generatePayload(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)generatePayloadWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC15generatePayload17completionHandleryySSSg_s5Error_pSgtc_tF",
+            "moduleName": "TruvideoCore",
+            "objc_name": "generatePayloadWithCompletionHandler:",
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC"
             ],
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "initAuthentication",
-            "printedName": "initAuthentication()",
+            "printedName": "initAuthentication(completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)initAuthenticationWithCompletionHandler:",
-            "mangledName": "$s12TruvideoCoreAAC18initAuthenticationyyYaKF",
+            "mangledName": "$s12TruvideoCoreAAC18initAuthentication17completionHandleryySS_s5Error_pSgtc_tF",
             "moduleName": "TruvideoCore",
             "objc_name": "initAuthenticationWithCompletionHandler:",
             "declAttributes": [
@@ -146,24 +308,61 @@
               "AccessControl",
               "ObjC"
             ],
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "isAuthenticated",
-            "printedName": "isAuthenticated()",
+            "printedName": "isAuthenticated(completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)isAuthenticatedWithCompletionHandler:",
-            "mangledName": "$s12TruvideoCoreAAC15isAuthenticatedSbyYaKF",
+            "mangledName": "$s12TruvideoCoreAAC15isAuthenticated17completionHandleryySS_s5Error_pSgtc_tF",
             "moduleName": "TruvideoCore",
             "objc_name": "isAuthenticatedWithCompletionHandler:",
             "declAttributes": [
@@ -171,24 +370,61 @@
               "AccessControl",
               "ObjC"
             ],
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "isAuthenticationExpired",
-            "printedName": "isAuthenticationExpired()",
+            "printedName": "isAuthenticationExpired(completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)isAuthenticationExpiredWithCompletionHandler:",
-            "mangledName": "$s12TruvideoCoreAAC23isAuthenticationExpiredSbyYaKF",
+            "mangledName": "$s12TruvideoCoreAAC23isAuthenticationExpired17completionHandleryySS_s5Error_pSgtc_tF",
             "moduleName": "TruvideoCore",
             "objc_name": "isAuthenticationExpiredWithCompletionHandler:",
             "declAttributes": [
@@ -196,7 +432,89 @@
               "AccessControl",
               "ObjC"
             ],
-            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toSha256String",
+            "printedName": "toSha256String(payload:secretKey:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)toSha256StringWithPayload:secretKey:completionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC14toSha256String7payload9secretKey17completionHandlerySS_SSySSSg_s5Error_pSgtctF",
+            "moduleName": "TruvideoCore",
+            "objc_name": "toSha256StringWithPayload:secretKey:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
