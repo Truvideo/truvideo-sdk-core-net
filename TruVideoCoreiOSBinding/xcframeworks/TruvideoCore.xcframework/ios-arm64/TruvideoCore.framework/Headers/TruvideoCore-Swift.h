@@ -314,6 +314,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TruvideoCore
 - (void)isAuthenticatedWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
 - (void)isAuthenticationExpiredWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
 - (void)toSha256StringWithPayload:(NSString * _Nonnull)payload secretKey:(NSString * _Nonnull)secretKey completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completionHandler;
+- (void)clearAuthenticationWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

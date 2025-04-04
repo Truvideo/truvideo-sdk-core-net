@@ -108,4 +108,17 @@ final public class TruvideoCore: NSObject {
         let hashString = macData.map { String(format: "%02x", $0) }.joined()
         completionHandler(hashString, nil)
     }
+    
+    @objc
+    public func clearAuthentication(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void){
+        Task{
+            do{
+                try TruvideoSdk.clearAuthentication()
+                completionHandler("Authentication Cleared", nil)
+            } catch {
+                completionHandler("Clear Authentication Failed", nil)
+            }
+        }
+       
+    }
 }

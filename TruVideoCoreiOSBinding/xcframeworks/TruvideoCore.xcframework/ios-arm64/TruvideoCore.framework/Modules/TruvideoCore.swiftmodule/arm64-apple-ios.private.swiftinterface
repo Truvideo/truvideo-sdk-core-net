@@ -18,6 +18,7 @@ import _SwiftConcurrencyShims
   @objc final public func isAuthenticated(completionHandler: @escaping (_ result: Swift.String, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc final public func isAuthenticationExpired(completionHandler: @escaping (_ result: Swift.String, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc final public func toSha256String(payload: Swift.String, secretKey: Swift.String, completionHandler: @escaping (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc final public func clearAuthentication(completionHandler: @escaping (_ result: Swift.String, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }

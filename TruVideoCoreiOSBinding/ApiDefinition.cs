@@ -33,5 +33,8 @@ interface TruvideoCore
 	
 	[Export ("toSha256StringWithPayload:secretKey:completionHandler:")]
 	void ToSha256String (string payload,string secretKey,Action<string, NSError> completionHandler);
+	
+	[Export ("clearAuthenticationWithCompletionHandler:")]
+	void clearAuthentication (Action<string, NSError> completionHandler);
 }
 }
