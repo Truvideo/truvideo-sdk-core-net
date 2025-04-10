@@ -10,6 +10,7 @@ final public class TruvideoCore: NSObject {
     
     // MARK: - Authentication
     
+    
     @objc
     public func authenticate(
         apiKey: String,
@@ -45,6 +46,28 @@ final public class TruvideoCore: NSObject {
         }
     }
     
+//    @objc
+//    public func truvideoSdkVersionString(completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
+//        Task {
+//            do {
+//                let result = try TruvideoCoreVersionString
+//                completionHandler(result, nil)
+//            } catch {
+//                completionHandler(nil, error)
+//            }
+//        }
+//    }
+    
+    @objc
+    public func truvideoCoreVersionNumber(completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
+        Task {
+            do {
+                let result = TruvideoCoreVersionNumber
+                completionHandler("\(result)", nil)
+            }
+        }
+    }
+    
     @objc
     public func initAuthentication(completionHandler: @escaping (_ success: String, _ error: Error?) -> Void) {
         Task {
@@ -56,9 +79,21 @@ final public class TruvideoCore: NSObject {
             }
         }
     }
+    
+    @objc public func getAPIKey(completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
+        Task {
+            do {
+                let result = try TruvideoSdk.apiKey()
+                completionHandler(result, nil)
+            } catch {
+                completionHandler(nil, error)
+            }
+        }
+    }
 
     @objc
     public func isAuthenticated(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void) {
+        
         Task {
             do {
                 let result = try TruvideoSdk.isAuthenticated()
@@ -82,8 +117,6 @@ final public class TruvideoCore: NSObject {
     }
 
     // MARK: - HMAC SHA-256
-
-    @objc
     public func toSha256String(payload: String, secretKey: String, completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
         guard let keyData = secretKey.data(using: .utf8),
               let payloadData = payload.data(using: .utf8) else {

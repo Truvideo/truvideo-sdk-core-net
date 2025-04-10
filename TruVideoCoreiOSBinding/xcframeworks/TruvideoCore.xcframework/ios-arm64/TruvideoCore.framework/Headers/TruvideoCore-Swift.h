@@ -310,10 +310,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TruvideoCore
 + (TruvideoCore * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)authenticateWithApiKey:(NSString * _Nonnull)apiKey payload:(NSString * _Nonnull)payload externalId:(NSString * _Nonnull)externalId signature:(NSString * _Nonnull)signature completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completionHandler;
 - (void)generatePayloadWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completionHandler;
+- (void)truvideoCoreVersionNumberWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completionHandler;
 - (void)initAuthenticationWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler SWIFT_METHOD_FAMILY(none);
+- (void)getAPIKeyWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completionHandler;
 - (void)isAuthenticatedWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
 - (void)isAuthenticationExpiredWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
-- (void)toSha256StringWithPayload:(NSString * _Nonnull)payload secretKey:(NSString * _Nonnull)secretKey completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completionHandler;
 - (void)clearAuthenticationWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

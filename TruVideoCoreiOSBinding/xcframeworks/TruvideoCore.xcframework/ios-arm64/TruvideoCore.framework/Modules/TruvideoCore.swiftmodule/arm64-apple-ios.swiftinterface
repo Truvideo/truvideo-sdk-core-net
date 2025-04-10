@@ -14,10 +14,12 @@ import _SwiftConcurrencyShims
   @objc public static let shared: TruvideoCore.TruvideoCore
   @objc final public func authenticate(apiKey: Swift.String, payload: Swift.String, externalId: Swift.String, signature: Swift.String, completionHandler: @escaping (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc final public func generatePayload(completionHandler: @escaping (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc final public func truvideoCoreVersionNumber(completionHandler: @escaping (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc final public func initAuthentication(completionHandler: @escaping (_ success: Swift.String, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc final public func getAPIKey(completionHandler: @escaping (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc final public func isAuthenticated(completionHandler: @escaping (_ result: Swift.String, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc final public func isAuthenticationExpired(completionHandler: @escaping (_ result: Swift.String, _ error: (any Swift.Error)?) -> Swift.Void)
-  @objc final public func toSha256String(payload: Swift.String, secretKey: Swift.String, completionHandler: @escaping (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
+  final public func toSha256String(payload: Swift.String, secretKey: Swift.String, completionHandler: @escaping (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc final public func clearAuthentication(completionHandler: @escaping (_ result: Swift.String, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit

@@ -250,6 +250,77 @@
           },
           {
             "kind": "Function",
+            "name": "truvideoCoreVersionNumber",
+            "printedName": "truvideoCoreVersionNumber(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)truvideoCoreVersionNumberWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC08truvideoB13VersionNumber17completionHandleryySSSg_s5Error_pSgtc_tF",
+            "moduleName": "TruvideoCore",
+            "objc_name": "truvideoCoreVersionNumberWithCompletionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "initAuthentication",
             "printedName": "initAuthentication(completionHandler:)",
             "children": [
@@ -303,6 +374,76 @@
             "mangledName": "$s12TruvideoCoreAAC18initAuthentication17completionHandleryySS_s5Error_pSgtc_tF",
             "moduleName": "TruvideoCore",
             "objc_name": "initAuthenticationWithCompletionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAPIKey",
+            "printedName": "getAPIKey(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)getAPIKeyWithCompletionHandler:",
+            "mangledName": "$s12TruvideoCoreAAC9getAPIKey17completionHandleryySSSg_s5Error_pSgtc_tF",
+            "moduleName": "TruvideoCore",
+            "objc_name": "getAPIKeyWithCompletionHandler:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -505,14 +646,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TruvideoCore@objc(cs)TruvideoCore(im)toSha256StringWithPayload:secretKey:completionHandler:",
+            "usr": "s:12TruvideoCoreAAC14toSha256String7payload9secretKey17completionHandlerySS_SSySSSg_s5Error_pSgtctF",
             "mangledName": "$s12TruvideoCoreAAC14toSha256String7payload9secretKey17completionHandlerySS_SSySSSg_s5Error_pSgtctF",
             "moduleName": "TruvideoCore",
-            "objc_name": "toSha256StringWithPayload:secretKey:completionHandler:",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
