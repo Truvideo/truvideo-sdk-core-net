@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Uj45MySFMa3RfD346Ki3IpAlWn8=
+		ybT4DjTyOQNDZhzVWIkqwLEvwNY=
 		</data>
 		<key>Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rfpWJGHCX5SYH8HVUJhK+k09mWk=
+		LPhWHCmIY/SOXTEojrw0X+i85QU=
 		</data>
 		<key>Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XGdHaqI/5ScNJUEo25Kj7SJDrs0=
+		XLIm012JNPx5VlDsjj8HYzvTkC4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9KVVaFdQ8owCCebQOcISEBt91aB/ksInyZkKryUl60w=
+			1UXi7pJjmMSy/3UNkcA6Osb6zfo1DOzproio7tfk734=
 			</data>
 		</dict>
 		<key>Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f0KWAzRhu/L71JexEaaKB6GheB3pykxA0v8t+zMqmbs=
+			p63LrqK2Gp9iUSWz56fVjW6AxoCdIew/q2Xgj+ltQIg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -13,10 +13,10 @@
     {
       "identity" : "truvideo-sdk-ios-core",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Truvideo/truvideo-sdk-ios-core",
+      "location" : "https://github.com/Truvideo/truvideo-sdk-ios-core.git",
       "state" : {
-        "revision" : "1b311d46e8b91def5c7ee250c1c4deab9e958603",
-        "version" : "76.2.1"
+        "revision" : "f24718aa26c7f979eaf0c39c4decc78c927261e0",
+        "version" : "78.1.1"
       }
     }
   ],
