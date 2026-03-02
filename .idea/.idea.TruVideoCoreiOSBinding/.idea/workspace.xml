@@ -8,20 +8,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c6be0b9-6118-46b5-b786-0bdf454d8e98" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TruVideoCoreiOSBinding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TruVideoCoreiOSBinding/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/TruVideoCoreiOSBinding.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/TruVideoCoreiOSBinding.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Headers/TruvideoCore-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Headers/TruvideoCore-Swift.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.swiftinterface" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/TruvideoCore" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/TruvideoCore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Headers/TruvideoCore-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Headers/TruvideoCore-Swift.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/TruvideoCore" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/TruvideoCore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64_x86_64-simulator/TruvideoCore.framework/_CodeSignature/CodeResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Headers/TruvideoSdk-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Headers/TruvideoSdk-Swift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Headers/TruvideoSdk.h" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Headers/TruvideoSdk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios.abi.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios.private.swiftinterface" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/Modules/module.modulemap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/TruvideoSdk" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/TruvideoSdk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/version.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/version.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/TruvideoSdk.framework/version.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/dSYMs/TruvideoSdk.framework.dSYM/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/dSYMs/TruvideoSdk.framework.dSYM/Contents/Resources/DWARF/TruvideoSdk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64/dSYMs/TruvideoSdk.framework.dSYM/Contents/Resources/Relocations/aarch64/TruvideoSdk.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Headers/TruvideoSdk-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Headers/TruvideoSdk-Swift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Headers/TruvideoSdk.h" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Headers/TruvideoSdk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios-simulator.abi.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc" afterDir="false" />
@@ -30,19 +55,18 @@
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/TruvideoSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/Modules/module.modulemap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/TruvideoSdk" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/TruvideoSdk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/version.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/version.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64/dSYMs/shared.framework.dSYM/Contents/Resources/DWARF/shared" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64/dSYMs/shared.framework.dSYM/Contents/Resources/DWARF/shared" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64/dSYMs/shared.framework.dSYM/Contents/Resources/Relocations/aarch64/shared.yml" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64/dSYMs/shared.framework.dSYM/Contents/Resources/Relocations/aarch64/shared.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64/shared.framework/Headers/shared.h" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64/shared.framework/Headers/shared.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64/shared.framework/shared" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64/shared.framework/shared" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64_x86_64-simulator/dSYMs/shared.framework.dSYM/Contents/Resources/DWARF/shared" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64_x86_64-simulator/dSYMs/shared.framework.dSYM/Contents/Resources/DWARF/shared" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64_x86_64-simulator/shared.framework/Headers/shared.h" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64_x86_64-simulator/shared.framework/Headers/shared.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64_x86_64-simulator/shared.framework/shared" beforeDir="false" afterPath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/shared.xcframework/ios-arm64_x86_64-simulator/shared.framework/shared" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/TruvideoSdk.framework/version.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/dSYMs/TruvideoSdk.framework.dSYM/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/dSYMs/TruvideoSdk.framework.dSYM/Contents/Resources/DWARF/TruvideoSdk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/dSYMs/TruvideoSdk.framework.dSYM/Contents/Resources/Relocations/aarch64/TruvideoSdk.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruVideoCoreiOSBinding/xcframeworks/TruvideoSdk.xcframework/ios-arm64_x86_64-simulator/dSYMs/TruvideoSdk.framework.dSYM/Contents/Resources/Relocations/x86_64/TruvideoSdk.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TruvideoCore/TruvideoCore.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TruvideoCore/TruvideoCore.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruvideoCore/TruvideoCore.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" beforeDir="false" afterPath="$PROJECT_DIR$/TruvideoCore/TruvideoCore.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TruvideoCore/TruvideoCore.xcodeproj/project.xcworkspace/xcuserdata/apple.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/TruvideoCore/TruvideoCore.xcodeproj/project.xcworkspace/xcuserdata/apple.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TruvideoCore/TruvideoCore/TruvideoCore.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TruvideoCore/TruvideoCore/TruvideoCore.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +76,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="prod-v0.0.6" />
+        <entry key="$PROJECT_DIR$" value="prod-v0.0.7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,6 +95,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/TruVideoCoreiOSBinding/ApiDefinition.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/apple/Documents/TruVideo/iOSBinding/truvideo-sdk-core-net/TruVideoCoreiOSBinding/xcframeworks/TruvideoCore.xcframework/ios-arm64/TruvideoCore.framework/Modules/TruvideoCore.swiftmodule/arm64-apple-ios.abi.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TruvideoCore/TruvideoCore/TruvideoCore.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -89,7 +114,7 @@
     &quot;DeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider&quot;: &quot;Device&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;prod-v0.0.7&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;prod-v1.0.0&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -121,6 +146,8 @@
       <workItem from="1744786814990" duration="1033000" />
       <workItem from="1755692683200" duration="1402000" />
       <workItem from="1761559898986" duration="1267000" />
+      <workItem from="1763367352470" duration="424000" />
+      <workItem from="1770025563894" duration="1301000" />
     </task>
     <task id="LOCAL-00001" summary="Expose version, getApiKey method and toSha256String method are removed">
       <option name="closed" value="true" />
@@ -146,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755693715873</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Upgrade to latest version 78.1.1">
+      <option name="closed" value="true" />
+      <created>1763367568431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763367568431</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +194,7 @@
     <MESSAGE value="Expose version, getApiKey method and toSha256String method are removed" />
     <MESSAGE value="Upgrade in .NET9" />
     <MESSAGE value="Upgrade in .NET 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade in .NET 9" />
+    <MESSAGE value="Upgrade to latest version 78.1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade to latest version 78.1.1" />
   </component>
 </project>

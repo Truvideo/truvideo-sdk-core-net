@@ -34,6 +34,50 @@ final public class TruvideoCore: NSObject {
         }
     }
     
+    
+    @objc
+    public func authenticateNew(
+        apiKey: String,
+        secretKey: String,
+        externalId: String,
+        completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void
+    ) {
+        Task {
+            do {
+               try await TruvideoSdk.authenticate(
+                    apiKey: apiKey,
+                    secretKey: secretKey,
+                    externalId: externalId
+                )
+                completionHandler("Authenticated", nil) // Success
+            } catch {
+                completionHandler(nil, error) // Failure
+            }
+        }
+    }
+    
+    
+    
+//    @objc
+//    public func configure(
+//        apiKey: String,
+//        secretKey: String,
+//        externalId: String,
+//        completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void
+//    ) {
+//        let signer = HMACSHA256Signer()
+//
+//        let options = TruVideoOptions(
+//            signer: signer
+//        )
+//
+//        TruvideoSdk.configure(with: options)
+//
+//        completionHandler("Configured Successfully", nil)
+//    }
+
+    
+    
     @objc
     public func generatePayload(completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
         Task {
@@ -95,15 +139,24 @@ final public class TruvideoCore: NSObject {
     public func isAuthenticated(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void) {
         
         Task {
-            do {
-                let result = try TruvideoSdk.isAuthenticated()
+                let result = TruvideoSdk.isAuthenticated
                 completionHandler("\(result)", nil)
+        }
+    }
+
+    @objc
+    public func signOut(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void) {
+        
+        Task {
+            do {
+                let _ = try TruvideoSdk.signOut()
+                completionHandler("Sign out successful", nil)
             } catch {
                 completionHandler("false", error)
             }
         }
     }
-
+    
     @objc
     public func isAuthenticationExpired(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void) {
         Task {
@@ -155,3 +208,5 @@ final public class TruvideoCore: NSObject {
        
     }
 }
+
+
