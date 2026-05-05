@@ -11,12 +11,30 @@
       }
     },
     {
+      "identity" : "truvideo-sdk-ios-common",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Truvideo/truvideo-sdk-ios-common",
+      "state" : {
+        "revision" : "6c03fc726a5e1d4449a9cd8ba983cec0e368071c",
+        "version" : "0.0.78"
+      }
+    },
+    {
       "identity" : "truvideo-sdk-ios-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Truvideo/truvideo-sdk-ios-core.git",
       "state" : {
-        "revision" : "54cad48e65c215315396e69acc1da72b5721a6db",
-        "version" : "78.2.1"
+        "revision" : "33123d53c89b53e77171b4e66eb1d48fc345db6e",
+        "version" : "79.0.1"
+      }
+    },
+    {
+      "identity" : "truvideo-sdk-ios-video-utils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Truvideo/truvideo-sdk-ios-video-utils",
+      "state" : {
+        "revision" : "8f6612be64c0cdb89a0d9016e4491c61e862b210",
+        "version" : "0.0.3"
       }
     }
   ],

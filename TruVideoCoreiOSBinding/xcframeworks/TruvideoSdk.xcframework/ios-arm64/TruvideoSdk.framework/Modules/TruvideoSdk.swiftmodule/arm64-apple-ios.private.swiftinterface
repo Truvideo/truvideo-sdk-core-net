@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TruvideoSdk
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CommonCrypto
 import Foundation
 import Swift
@@ -10,6 +9,31 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_spi(Internal) public struct Configuration : Swift.Hashable, Swift.Sendable {
+  @_spi(Internal) public let isAutoPlayEnabled: Swift.Bool
+  @_spi(Internal) public let isCameraModuleEnabled: Swift.Bool
+  @_spi(Internal) public let isNoiseCancellingEnabled: Swift.Bool
+  @_spi(Internal) public let isStreamingUploadEnabled: Swift.Bool
+  @_spi(Internal) public let s3Configuration: TruvideoSdk.Configuration.AWSS3
+  @_spi(Internal) public struct AWSS3 : Swift.Hashable, Swift.Sendable {
+    @_spi(Internal) public let bucketName: Swift.String
+    @_spi(Internal) public let identityId: Swift.String
+    @_spi(Internal) public let identityPoolId: Swift.String
+    @_spi(Internal) public let logsFolderPath: Swift.String
+    @_spi(Internal) public let mediasFolderPath: Swift.String
+    @_spi(Internal) public let region: Swift.String
+    @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(Internal) public static func == (a: TruvideoSdk.Configuration.AWSS3, b: TruvideoSdk.Configuration.AWSS3) -> Swift.Bool
+    @_spi(Internal) public var hashValue: Swift.Int {
+      @_spi(Internal) get
+    }
+  }
+  @_spi(Internal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(Internal) public static func == (a: TruvideoSdk.Configuration, b: TruvideoSdk.Configuration) -> Swift.Bool
+  @_spi(Internal) public var hashValue: Swift.Int {
+    @_spi(Internal) get
+  }
+}
 public struct Context : Swift.Codable, Swift.Sendable {
   public let brand: Swift.String
   public let model: Swift.String
@@ -19,6 +43,15 @@ public struct Context : Swift.Codable, Swift.Sendable {
   public init()
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@_spi(Internal) public struct Environment : Swift.Hashable, Swift.RawRepresentable, Swift.Sendable {
+  @_spi(Internal) public let rawValue: Swift.String
+  @_spi(Internal) public static let beta: TruvideoSdk.Environment
+  @_spi(Internal) public static let dev: TruvideoSdk.Environment
+  @_spi(Internal) public static let prod: TruvideoSdk.Environment
+  @_spi(Internal) public static let rc: TruvideoSdk.Environment
+  @_spi(Internal) public init(rawValue: Swift.String)
+  @_spi(Internal) public typealias RawValue = Swift.String
 }
 public protocol Signer : Swift.Sendable {
   func sign(_ context: TruvideoSdk.Context, secretKey: Swift.String) async throws -> Swift.String
@@ -32,10 +65,14 @@ extension TruvideoSdk.TruVideoSdkError {
   public static let payloadGenerationFailed: TruvideoSdk.TruVideoSdkError
 }
 public protocol TruVideoSDK {
+  @_spi(Internal) var authToken: Swift.String? { get }
+  @_spi(Internal) var configuration: TruvideoSdk.Configuration { get }
+  @_spi(Internal) var environment: TruvideoSdk.Environment { get }
   var isAuthenticated: Swift.Bool { get }
   var options: TruvideoSdk.TruVideoOptions { get }
   func authenticate(apiKey: Swift.String, secretKey: Swift.String, externalId: Swift.String?) async throws
   func configure(with options: TruvideoSdk.TruVideoOptions)
+  @_spi(Internal) func refreshToken() async throws
   func signOut() throws
   @available(*, deprecated, message: "Use TruVideoSDK.options.apiKey instead.")
   func apiKey() throws -> Swift.String
@@ -64,6 +101,7 @@ public struct TruVideoSdkError : Foundation.LocalizedError {
   public let failureReason: Swift.String?
   public static let authenticationFailed: TruvideoSdk.TruVideoSdkError
   public static let configurationRequired: TruvideoSdk.TruVideoSdkError
+  public static let failedToRefreshToken: TruvideoSdk.TruVideoSdkError
   public static let signOutFailed: TruvideoSdk.TruVideoSdkError
   public static let unknown: TruvideoSdk.TruVideoSdkError
   public struct ErrorReason : Swift.Equatable, Swift.RawRepresentable {

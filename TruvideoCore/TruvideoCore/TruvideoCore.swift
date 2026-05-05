@@ -21,6 +21,7 @@ final public class TruvideoCore: NSObject {
     ) {
         Task {
             do {
+                TruvideoSdk.configure()
                try await TruvideoSdk.authenticate(
                     apiKey: apiKey,
                     payload: payload,
@@ -44,6 +45,7 @@ final public class TruvideoCore: NSObject {
     ) {
         Task {
             do {
+                TruvideoSdk.configure()
                try await TruvideoSdk.authenticate(
                     apiKey: apiKey,
                     secretKey: secretKey,
@@ -82,6 +84,7 @@ final public class TruvideoCore: NSObject {
     public func generatePayload(completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
         Task {
             do {
+                TruvideoSdk.configure()
                 let result = try TruvideoSdk.generatePayload()
                 completionHandler(result, nil)
             } catch {
@@ -106,6 +109,7 @@ final public class TruvideoCore: NSObject {
     public func truvideoCoreVersionNumber(completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
         Task {
             do {
+                TruvideoSdk.configure()
                 let result = TruvideoCoreVersionNumber
                 completionHandler("\(result)", nil)
             }
@@ -116,6 +120,7 @@ final public class TruvideoCore: NSObject {
     public func initAuthentication(completionHandler: @escaping (_ success: String, _ error: Error?) -> Void) {
         Task {
             do {
+                TruvideoSdk.configure()
                 try await TruvideoSdk.initAuthentication()
                 completionHandler("Authenticated Successfully", nil)
             } catch {
@@ -127,6 +132,7 @@ final public class TruvideoCore: NSObject {
     @objc public func getAPIKey(completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void) {
         Task {
             do {
+                TruvideoSdk.configure()
                 let result = try TruvideoSdk.apiKey()
                 completionHandler(result, nil)
             } catch {
@@ -139,6 +145,7 @@ final public class TruvideoCore: NSObject {
     public func isAuthenticated(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void) {
         
         Task {
+            TruvideoSdk.configure()
                 let result = TruvideoSdk.isAuthenticated
                 completionHandler("\(result)", nil)
         }
@@ -149,6 +156,7 @@ final public class TruvideoCore: NSObject {
         
         Task {
             do {
+                TruvideoSdk.configure()
                 let _ = try TruvideoSdk.signOut()
                 completionHandler("Sign out successful", nil)
             } catch {
@@ -161,6 +169,7 @@ final public class TruvideoCore: NSObject {
     public func isAuthenticationExpired(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void) {
         Task {
             do {
+                TruvideoSdk.configure()
                 let result = try TruvideoSdk.isAuthenticationExpired()
                 completionHandler("\(result)", nil)
             } catch {
@@ -199,6 +208,7 @@ final public class TruvideoCore: NSObject {
     public func clearAuthentication(completionHandler: @escaping (_ result: String, _ error: Error?) -> Void){
         Task{
             do{
+                TruvideoSdk.configure()
                 try TruvideoSdk.clearAuthentication()
                 completionHandler("Authentication Cleared", nil)
             } catch {
