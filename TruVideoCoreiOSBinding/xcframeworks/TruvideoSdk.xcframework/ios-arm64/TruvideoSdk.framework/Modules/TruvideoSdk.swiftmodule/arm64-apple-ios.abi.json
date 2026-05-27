@@ -2399,6 +2399,37 @@
           },
           {
             "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate(otp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11TruvideoSdk11TruVideoSDKP12authenticate3otpySS_tYaKF",
+            "mangledName": "$s11TruvideoSdk11TruVideoSDKP12authenticate3otpySS_tYaKF",
+            "moduleName": "TruvideoSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : TruvideoSdk.TruVideoSDK>",
+            "sugared_genericSig": "<Self where Self : TruvideoSdk.TruVideoSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "configure",
             "printedName": "configure(with:)",
             "children": [
@@ -2957,6 +2988,118 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AuthenticationError",
+        "printedName": "AuthenticationError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11TruvideoSdk19AuthenticationErrorV20localizedDescriptionSSvp",
+            "mangledName": "$s11TruvideoSdk19AuthenticationErrorV20localizedDescriptionSSvp",
+            "moduleName": "TruvideoSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11TruvideoSdk19AuthenticationErrorV20localizedDescriptionSSvg",
+                "mangledName": "$s11TruvideoSdk19AuthenticationErrorV20localizedDescriptionSSvg",
+                "moduleName": "TruvideoSdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthenticationError",
+                "printedName": "TruvideoSdk.AuthenticationError",
+                "usr": "s:11TruvideoSdk19AuthenticationErrorV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11TruvideoSdk19AuthenticationErrorVACycfc",
+            "mangledName": "$s11TruvideoSdk19AuthenticationErrorVACycfc",
+            "moduleName": "TruvideoSdk",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11TruvideoSdk19AuthenticationErrorV",
+        "mangledName": "$s11TruvideoSdk19AuthenticationErrorV",
+        "moduleName": "TruvideoSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "TruVideoSdkError",
         "printedName": "TruVideoSdkError",
         "children": [
@@ -3264,6 +3407,54 @@
                 "declKind": "Accessor",
                 "usr": "s:11TruvideoSdk08TruVideoB5ErrorV20failedToRefreshTokenACvgZ",
                 "mangledName": "$s11TruvideoSdk08TruVideoB5ErrorV20failedToRefreshTokenACvgZ",
+                "moduleName": "TruvideoSdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "otpAuthenticationFailed",
+            "printedName": "otpAuthenticationFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TruVideoSdkError",
+                "printedName": "TruvideoSdk.TruVideoSdkError",
+                "usr": "s:11TruvideoSdk08TruVideoB5ErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11TruvideoSdk08TruVideoB5ErrorV23otpAuthenticationFailedACvpZ",
+            "mangledName": "$s11TruvideoSdk08TruVideoB5ErrorV23otpAuthenticationFailedACvpZ",
+            "moduleName": "TruvideoSdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TruVideoSdkError",
+                    "printedName": "TruvideoSdk.TruVideoSdkError",
+                    "usr": "s:11TruvideoSdk08TruVideoB5ErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11TruvideoSdk08TruVideoB5ErrorV23otpAuthenticationFailedACvgZ",
+                "mangledName": "$s11TruvideoSdk08TruVideoB5ErrorV23otpAuthenticationFailedACvgZ",
                 "moduleName": "TruvideoSdk",
                 "static": true,
                 "implicit": true,
@@ -3602,6 +3793,54 @@
                     "declKind": "Accessor",
                     "usr": "s:11TruvideoSdk08TruVideoB5ErrorV0E6ReasonV16invalidSignatureAEvgZ",
                     "mangledName": "$s11TruvideoSdk08TruVideoB5ErrorV0E6ReasonV16invalidSignatureAEvgZ",
+                    "moduleName": "TruvideoSdk",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "otpAuthenticationFailed",
+                "printedName": "otpAuthenticationFailed",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorReason",
+                    "printedName": "TruvideoSdk.TruVideoSdkError.ErrorReason",
+                    "usr": "s:11TruvideoSdk08TruVideoB5ErrorV0E6ReasonV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TruvideoSdk08TruVideoB5ErrorV0E6ReasonV23otpAuthenticationFailedAEvpZ",
+                "mangledName": "$s11TruvideoSdk08TruVideoB5ErrorV0E6ReasonV23otpAuthenticationFailedAEvpZ",
+                "moduleName": "TruvideoSdk",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorReason",
+                        "printedName": "TruvideoSdk.TruVideoSdkError.ErrorReason",
+                        "usr": "s:11TruvideoSdk08TruVideoB5ErrorV0E6ReasonV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TruvideoSdk08TruVideoB5ErrorV0E6ReasonV23otpAuthenticationFailedAEvgZ",
+                    "mangledName": "$s11TruvideoSdk08TruVideoB5ErrorV0E6ReasonV23otpAuthenticationFailedAEvgZ",
                     "moduleName": "TruvideoSdk",
                     "static": true,
                     "implicit": true,
@@ -4123,133 +4362,154 @@
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/App\/TruVideoApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 13568,
+      "offset": 14549,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/App\/TruVideoApp.swift",
       "kind": "StringLiteral",
-      "offset": 13706,
+      "offset": 14687,
       "length": 36,
       "value": "\"com.truvideo.app.pathMonitor.queue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 1622,
+      "offset": 2128,
       "length": 69,
       "value": "\"Authentication failed. Please check your credentials and try again.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 1716,
+      "offset": 2222,
       "length": 46,
       "value": "\"Invalid API key, secret key, or external ID.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 2096,
+      "offset": 2602,
       "length": 75,
       "value": "\"TruVideo SDK requires configuration. Please configure the SDK before use.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 2196,
+      "offset": 2702,
       "length": 54,
       "value": "\"SDK configuration is required before authentication.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 2671,
+      "offset": 3177,
       "length": 22,
       "value": "\"failedToRefreshToken\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 2722,
+      "offset": 3228,
       "length": 41,
       "value": "\"Token refresh failed. Please try again.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 2788,
+      "offset": 3294,
       "length": 61,
       "value": "\"The SDK could not refresh the current authentication token.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 3196,
+      "offset": 3802,
+      "length": 62,
+      "value": "\"Authentication failed. Please check your code and try again.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
+      "kind": "StringLiteral",
+      "offset": 3889,
+      "length": 87,
+      "value": "\"OTP verification failed or the authentication service rejected the one-time passcode.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
+      "kind": "StringLiteral",
+      "offset": 4323,
       "length": 15,
       "value": "\"signOutFailed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 3240,
+      "offset": 4367,
       "length": 18,
       "value": "\"Sign-out failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 3283,
+      "offset": 4410,
       "length": 66,
       "value": "\"An error occurred during the sign-out process. Please try again.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 3754,
+      "offset": 4881,
       "length": 55,
       "value": "\"An unexpected error occurred. Please try again later.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 3834,
+      "offset": 4961,
       "length": 49,
       "value": "\"Unknown error type that could not be classified\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 4626,
+      "offset": 5753,
       "length": 22,
       "value": "\"authenticationFailed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 5180,
+      "offset": 6307,
       "length": 23,
       "value": "\"configurationRequired\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 5636,
+      "offset": 6763,
       "length": 15,
       "value": "\"invalidApiKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 6070,
+      "offset": 7197,
       "length": 18,
       "value": "\"invalidSignature\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
       "kind": "StringLiteral",
-      "offset": 6176,
+      "offset": 7510,
+      "length": 25,
+      "value": "\"otpAuthenticationFailed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Error\/TruVideoSdkError.swift",
+      "kind": "StringLiteral",
+      "offset": 7623,
       "length": 9,
       "value": "\"unknown\""
     },
@@ -4271,27 +4531,27 @@
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Version.swift",
       "kind": "StringLiteral",
       "offset": 119,
-      "length": 8,
-      "value": "\"79.0.1\""
+      "length": 7,
+      "value": "\"1.0.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Version.swift",
       "kind": "StringLiteral",
-      "offset": 149,
+      "offset": 148,
       "length": 6,
       "value": "\"PROD\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Version.swift",
       "kind": "StringLiteral",
-      "offset": 177,
+      "offset": 176,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Version.swift",
       "kind": "StringLiteral",
-      "offset": 200,
+      "offset": 199,
       "length": 2,
       "value": "\"\""
     }
