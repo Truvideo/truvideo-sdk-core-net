@@ -235,6 +235,57 @@
           },
           {
             "kind": "Var",
+            "name": "noiseCancellingEngine",
+            "printedName": "noiseCancellingEngine",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NoiseCancellingEngine",
+                "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine",
+                "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11TruvideoSdk13ConfigurationV21noiseCancellingEngineAC05NoiseeF0Ovp",
+            "mangledName": "$s11TruvideoSdk13ConfigurationV21noiseCancellingEngineAC05NoiseeF0Ovp",
+            "moduleName": "TruvideoSdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NoiseCancellingEngine",
+                    "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine",
+                    "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11TruvideoSdk13ConfigurationV21noiseCancellingEngineAC05NoiseeF0Ovg",
+                "mangledName": "$s11TruvideoSdk13ConfigurationV21noiseCancellingEngineAC05NoiseeF0Ovg",
+                "moduleName": "TruvideoSdk",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "s3Configuration",
             "printedName": "s3Configuration",
             "children": [
@@ -281,6 +332,251 @@
                   "Internal"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "NoiseCancellingEngine",
+            "printedName": "NoiseCancellingEngine",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "ncKit",
+                "printedName": "ncKit",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TruvideoSdk.Configuration.NoiseCancellingEngine.Type) -> TruvideoSdk.Configuration.NoiseCancellingEngine",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NoiseCancellingEngine",
+                        "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine",
+                        "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NoiseCancellingEngine",
+                            "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine",
+                            "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO5ncKityA2EmF",
+                "mangledName": "$s11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO5ncKityA2EmF",
+                "moduleName": "TruvideoSdk",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "krisp",
+                "printedName": "krisp",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TruvideoSdk.Configuration.NoiseCancellingEngine.Type) -> TruvideoSdk.Configuration.NoiseCancellingEngine",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NoiseCancellingEngine",
+                        "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine",
+                        "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NoiseCancellingEngine",
+                            "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine",
+                            "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO5krispyA2EmF",
+                "mangledName": "$s11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO5krispyA2EmF",
+                "moduleName": "TruvideoSdk",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NoiseCancellingEngine",
+                        "printedName": "TruvideoSdk.Configuration.NoiseCancellingEngine",
+                        "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO8rawValueAESgSS_tcfc",
+                "mangledName": "$s11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO8rawValueAESgSS_tcfc",
+                "moduleName": "TruvideoSdk",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO8rawValueSSvp",
+                "mangledName": "$s11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO8rawValueSSvp",
+                "moduleName": "TruvideoSdk",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO8rawValueSSvg",
+                    "mangledName": "$s11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO8rawValueSSvg",
+                    "moduleName": "TruvideoSdk",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "Internal"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO",
+            "mangledName": "$s11TruvideoSdk13ConfigurationV21NoiseCancellingEngineO",
+            "moduleName": "TruvideoSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -1699,6 +1995,26 @@
       },
       {
         "kind": "Import",
+        "name": "TruVideoFoundation",
+        "printedName": "TruVideoFoundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "StorageKit",
         "printedName": "StorageKit",
         "declKind": "Import",
@@ -1980,6 +2296,36 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TruVideoFoundation",
+        "printedName": "TruVideoFoundation",
+        "declKind": "Import",
+        "moduleName": "TruvideoSdk",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -4208,70 +4554,77 @@
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2481,
+      "offset": 2809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2519,
+      "offset": 2847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2560,
+      "offset": 2888,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2601,
+      "offset": 2929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 4477,
+      "offset": 3267,
+      "length": 16,
+      "value": "\"deepFilterNet3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 5752,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 4505,
+      "offset": 5780,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 4537,
+      "offset": 5812,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 4569,
+      "offset": 5844,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 4603,
+      "offset": 5878,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Configuration\/Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 4627,
+      "offset": 5902,
       "length": 2,
       "value": "\"\""
     },
@@ -4316,6 +4669,13 @@
       "offset": 3639,
       "length": 30,
       "value": "\"truvideo-sdk-common-settings\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Decoder\/Error\/TokenDecoderErrorReason.swift",
+      "kind": "StringLiteral",
+      "offset": 858,
+      "length": 17,
+      "value": "\"DECODING_FAILED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/App\/TruVideoApp+Deprecation.swift",
@@ -4532,7 +4892,7 @@
       "kind": "StringLiteral",
       "offset": 119,
       "length": 7,
-      "value": "\"1.0.1\""
+      "value": "\"1.0.5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/truvideo-ios-sdk\/truvideo-ios-sdk\/Libraries\/External\/Extended\/App\/Sources\/Version.swift",

@@ -217,6 +217,31 @@ final public class TruvideoCore: NSObject {
         }
        
     }
+    
+    // MARK: Authenticate OTP
+
+        @objc
+        public func authenticateOTP(
+            otp: String,
+            completionHandler: @escaping (_ result: String?, _ error: Error?) -> Void
+        ) {
+            Task {
+                do {
+                    try await TruvideoSdk.authenticate(
+                        otp: otp
+                    )
+
+                    completionHandler("OTP Authenticated", nil)
+
+                } catch {
+                    completionHandler(nil, error)
+                }
+            }
+        }
+    
+    
+    
+    
 }
 
 

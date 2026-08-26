@@ -42,5 +42,15 @@ interface TruvideoCore
 	
 	[Export ("clearAuthenticationWithCompletionHandler:")]
 	void clearAuthentication (Action<string, NSError> completionHandler);
+	
+	// NEW authenticateOTP
+	// [Export("authenticateOTPWithOtp:completionHandler:")]
+	// void AuthenticateOTP(string otp, Action<string, NSError> completionHandler);
+	
+	[Export("authenticateOTPWithOtp:completionHandler:")]
+	void AuthenticateOTP(
+		string otp,
+		Action<string?, NSError?> completionHandler
+	);
 }
 }

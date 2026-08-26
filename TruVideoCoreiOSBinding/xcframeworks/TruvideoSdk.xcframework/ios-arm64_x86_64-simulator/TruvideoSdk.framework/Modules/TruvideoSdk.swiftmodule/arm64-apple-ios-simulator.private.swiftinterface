@@ -14,7 +14,17 @@ import _SwiftConcurrencyShims
   @_spi(Internal) public let isCameraModuleEnabled: Swift.Bool
   @_spi(Internal) public let isNoiseCancellingEnabled: Swift.Bool
   @_spi(Internal) public let isStreamingUploadEnabled: Swift.Bool
+  @_spi(Internal) public let noiseCancellingEngine: TruvideoSdk.Configuration.NoiseCancellingEngine
   @_spi(Internal) public let s3Configuration: TruvideoSdk.Configuration.AWSS3
+  @_spi(Internal) public enum NoiseCancellingEngine : Swift.String, Swift.Hashable, Swift.Sendable {
+    @_spi(Internal) case ncKit
+    @_spi(Internal) case krisp
+    @_spi(Internal) public init?(rawValue: Swift.String)
+    @_spi(Internal) public typealias RawValue = Swift.String
+    @_spi(Internal) public var rawValue: Swift.String {
+      @_spi(Internal) get
+    }
+  }
   @_spi(Internal) public struct AWSS3 : Swift.Hashable, Swift.Sendable {
     @_spi(Internal) public let bucketName: Swift.String
     @_spi(Internal) public let identityId: Swift.String
@@ -124,3 +134,4 @@ public struct TruVideoSdkError : Foundation.LocalizedError {
     public typealias RawValue = Swift.String
   }
 }
+@_spi(Internal) extension TruvideoSdk.Configuration.NoiseCancellingEngine : Swift.RawRepresentable {}

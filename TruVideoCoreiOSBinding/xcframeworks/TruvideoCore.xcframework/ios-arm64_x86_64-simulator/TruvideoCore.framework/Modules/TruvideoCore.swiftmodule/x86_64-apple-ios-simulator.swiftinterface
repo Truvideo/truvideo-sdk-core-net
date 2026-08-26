@@ -45,6 +45,9 @@ import _SwiftConcurrencyShims
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func clearAuthentication(completionHandler: @escaping (_ result: Swift.String, _ error: (any Swift.Error)?) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func authenticateOTP(otp: Swift.String, completionHandler: @escaping (_ result: Swift.String?, _ error: (any Swift.Error)?) -> Swift.Void)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }

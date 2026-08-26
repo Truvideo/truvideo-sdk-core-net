@@ -319,6 +319,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TruvideoCore
 - (void)signOutWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
 - (void)isAuthenticationExpiredWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
 - (void)clearAuthenticationWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completionHandler;
+- (void)authenticateOTPWithOtp:(NSString * _Nonnull)otp completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
